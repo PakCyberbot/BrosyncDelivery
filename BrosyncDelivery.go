@@ -117,7 +117,9 @@ func decodeFile(db *sql.DB, outputDir string) {
 
 		q := u.Query()
 		b64Filename, _ := url.QueryUnescape(q.Get("filename"))
+		b64Filename = strings.ReplaceAll(b64Filename, " ", "+")
 		b64chunkNumStr, _ := url.QueryUnescape(q.Get("chunk"))
+		b64chunkNumStr = strings.ReplaceAll(b64chunkNumStr, " ", "+")
 		b64Data := q.Get("b64data")
 		chunkNumBytes, _ := base64.StdEncoding.DecodeString(b64chunkNumStr)
 		chunkNum, _ := strconv.Atoi(string(chunkNumBytes))
@@ -148,6 +150,8 @@ func decodeFile(db *sql.DB, outputDir string) {
 			combined.WriteString(c.data)
 		}
 		combinedStr, _ := url.QueryUnescape(combined.String())
+		combinedStr = strings.ReplaceAll(combinedStr, " ", "+")
+		fmt.Println(combinedStr)
 		decoded, err := base64.StdEncoding.DecodeString(combinedStr)
 		if err != nil {
 			log.Fatalf("Failed to decode base64: %v", err)
