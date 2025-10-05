@@ -4,9 +4,10 @@
 
 This project is intended **only** for educational and defensive research (red-team / blue-team) to help security professionals understand stealthy data delivery and exfiltration techniques so they can improve detection and mitigation controls. Do **not** use this tool against systems you do not own or have explicit permission to test. Refer to your local laws and organizational policies before running any tests.
 
+It's a proof-of-concept tool
 
 Tool Demonstration and Explanation Video: https://youtu.be/naAJ2q_00sk
-
+Medium Article: https://pakcyberbot.medium.com/new-data-exfiltration-technique-using-brave-sync-3fe5313c5e59
 ---
 
 ## Overview
