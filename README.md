@@ -6,8 +6,9 @@ This project is intended **only** for educational and defensive research (red-te
 
 It's a proof-of-concept tool
 
-Tool Demonstration and Explanation Video: https://youtu.be/naAJ2q_00sk
-Medium Article: https://pakcyberbot.medium.com/new-data-exfiltration-technique-using-brave-sync-3fe5313c5e59
+## [Tool Demonstration and Explanation Video](https://youtu.be/naAJ2q_00sk)
+## [Medium Article](https://pakcyberbot.medium.com/new-data-exfiltration-technique-using-brave-sync-3fe5313c5e59)
+
 ---
 
 ## Overview
